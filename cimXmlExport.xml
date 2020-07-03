@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF - 8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:cim="http://iec.ch/TC57/2017/CIM-schema-cim17#" xmlns:sedms= "http://www.schneider-electric-dms.com/CIM17v38/2017/extension"xml:base= "http://iec.ch/TC57/2017/CIM-schema-cim17#" >
+
+
+	<cim:Circuit rdf:ID="e9365360-45af-4628-a822-b46b6bc97c16">
+		<cim:PowerSystemResource.PSRType rdf:resource="#Feeder"></cim:PowerSystemResource.PSRType>	
+		<cim:IdentifiedObject.mRID>e9365360-45af-4628-a822-b46b6bc97c16</cim:IdentifiedObject.mRID>	
+		<cim:IdentifiedObject.name>Feeder_36</cim:IdentifiedObject.name>	
+	</cim:Circuit>
+	<cim:PSRType rdf:ID="Feeder">
+		<cim:IdentifiedObject.mRID>Feeder</cim:IdentifiedObject.mRID>	
+		<cim:IdentifiedObject.name>Feeder</cim:IdentifiedObject.name>	
+	</cim:PSRType>
+	
+
+</rdf:RDF>

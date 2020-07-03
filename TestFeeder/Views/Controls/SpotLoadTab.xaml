@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="TestFeeder.Views.Controls.SpotLoadTab"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TestFeeder.Views.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+
+    <Grid>
+        <StackPanel>
+            <Label  Content="Spot Load data" HorizontalAlignment="Center" Margin="5"  FontSize="25"/>
+            <ListView x:Name="spotLoadData" Width="1150" Height="300" >
+                <ListView.Resources>
+                    <DataTemplate x:Key="Templ">
+                        <TextBlock HorizontalAlignment="Left" Text="{Binding}"/>
+                    </DataTemplate>
+                    <Style x:Key="HeaderStyle" TargetType="GridViewColumnHeader">
+                        <Setter Property="HorizontalContentAlignment" Value="Left"/>
+                    </Style>
+                </ListView.Resources>
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn  HeaderTemplate="{StaticResource Templ}" HeaderContainerStyle="{StaticResource HeaderStyle}" Header="       Node ID "  Width="115" DisplayMemberBinding="{Binding Element_id}"  />
+                        <GridViewColumn  HeaderTemplate="{StaticResource Templ}" HeaderContainerStyle="{StaticResource HeaderStyle}" Header="       Load Model ID "  Width="115" DisplayMemberBinding="{Binding LoadModel}"  />
+                        <GridViewColumn  HeaderTemplate="{StaticResource Templ}" HeaderContainerStyle="{StaticResource HeaderStyle}" Header="       Ph_1 (kW) "  Width="115" DisplayMemberBinding="{Binding Ph_1}"  />
+                        <GridViewColumn  HeaderTemplate="{StaticResource Templ}" HeaderContainerStyle="{StaticResource HeaderStyle}" Header="       Ph_1 (kVAr) "  Width="115" DisplayMemberBinding="{Binding Ph_1_2}"  />
+                        <GridViewColumn  HeaderTemplate="{StaticResource Templ}" HeaderContainerStyle="{StaticResource HeaderStyle}" Header="       Ph_2 (kW) "  Width="115" DisplayMemberBinding="{Binding Ph_2}"  />
+                        <GridViewColumn  HeaderTemplate="{StaticResource Templ}" HeaderContainerStyle="{StaticResource HeaderStyle}" Header="       Ph_2 (kVAr) "  Width="115" DisplayMemberBinding="{Binding Ph_2_2}"  />
+                        <GridViewColumn  HeaderTemplate="{StaticResource Templ}" HeaderContainerStyle="{StaticResource HeaderStyle}" Header="       Ph_3 (kW) "  Width="115" DisplayMemberBinding="{Binding Ph_3}"  />
+                        <GridViewColumn  HeaderTemplate="{StaticResource Templ}" HeaderContainerStyle="{StaticResource HeaderStyle}" Header="       Ph_3 (kVAr) "  Width="115" DisplayMemberBinding="{Binding Ph_3_2}"  />
+                        <GridViewColumn Header="Edit" Width="100">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button  CommandParameter="{Binding}" Click="UpdateSpotLoad">
+                                        <Image Source="/Images/84380.png" Width="30" Height="30"></Image>
+                                    </Button>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Delete" Width="100">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button CommandParameter="{Binding}" Click="DeleteSpotLoad">
+                                        <Image Source="/Images/download.png" Width="30" Height="30"></Image>
+                                    </Button>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                    
+                </ListView.View>
+            </ListView>
+
+
+
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,153 @@
+﻿<Window x:Class="TestFeeder.Views.RegulatorView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestFeeder.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="900"
+      Width="500"
+      Height="900"
+      Title="RegulatorDetails"
+      WindowStartupLocation="CenterScreen">
+
+    <Grid>
+
+
+        <DockPanel LastChildFill="False">
+
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="10">
+                <Label Content="Length (m.) " />
+                <TextBox   Width="100" Name="length" PreviewTextInput="bandwidthTextBox_PreviewTextInput" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="10">
+                <Label Name="labelID" Content="Enter ID:" />
+                <TextBox   Width="100" Name="MyTextBox"  />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Label   Content="Line segment from:"/>
+                <TextBox   Width="100"  Name="linefrom" IsReadOnly="True" />
+                <Label  Content="Line segment to:" />
+                <TextBox   Width="100" Name="lineTo"  />
+
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+                <Label Name="location" Content="Location:"  HorizontalAlignment="Center" HorizontalContentAlignment="Left"></Label>
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Label   Content="Phases:" />
+                <ComboBox  x:Name="phaseEnum"></ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Label   Content="Connection:" />
+                <ComboBox  x:Name="connection"></ComboBox>
+
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Label   Content="Monitoring Phase:" />
+                <ComboBox  x:Name="monitoringPhase"></ComboBox>
+
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Label  Name="bandwidth" Content="Bandwidth:" />
+                <TextBox   Width="100" PreviewTextInput="bandwidthTextBox_PreviewTextInput" Name="bandwidthTextBox"  />
+                <Label   Content="Volts" />
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Label  Name="ptRatio" Content="Pt Ratio:" />
+                <TextBox   Width="100" PreviewTextInput="bandwidthTextBox_PreviewTextInput" Name="ptRatioTextBox"  />
+
+            </StackPanel>
+
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Label  Name="ctRating" Content="Primary CT Rating:" />
+                <TextBox   Width="100" PreviewTextInput="bandwidthTextBox_PreviewTextInput" Name="primaryCTRatingTextBox"  />
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Label   Content="Compensator settings:"  />
+                <ComboBox  x:Name="compensatorSettingsA" Margin="10"></ComboBox>
+                <ComboBox  x:Name="compensatorSettingsB"  Margin="10" ></ComboBox>
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Label   Content="R Setting" />
+                <TextBox   Width="100" PreviewTextInput="bandwidthTextBox_PreviewTextInput" Name="rsettingA"  Margin="5" />
+                <TextBox   Width="100" PreviewTextInput="bandwidthTextBox_PreviewTextInput" Name="rsettingB" Margin="5" />
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Label   Content="X Setting" />
+                <TextBox   Width="100" PreviewTextInput="bandwidthTextBox_PreviewTextInput" Name="xsettingA"  Margin="5" />
+                <TextBox   Width="100" PreviewTextInput="bandwidthTextBox_PreviewTextInput" Name="xsettingB"  Margin="5" />
+
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Label   Content="Voltage Level:" />
+                <TextBox   Width="100" PreviewTextInput="bandwidthTextBox_PreviewTextInput" Name="voltage_level" Margin="5"  />
+                <TextBox   Width="100" PreviewTextInput="bandwidthTextBox_PreviewTextInput" Name="voltage_levelB" Margin="5" />
+
+            </StackPanel>
+            
+            
+
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Button Name ="dynamicButton" Background="Green" Width ="200" Content="Save" Click="Button_Click">
+
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+
+                </Button>
+
+                <Button Name ="dynamicButton2" Background="Red" Width ="200" Content="Delete" Click="dynamicButton2_Click">
+
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+
+                </Button>
+
+            </StackPanel>
+
+
+        </DockPanel>
+
+    </Grid>
+</Window>

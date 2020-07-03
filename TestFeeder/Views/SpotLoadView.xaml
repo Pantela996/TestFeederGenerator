@@ -1,0 +1,79 @@
+﻿<Window x:Class="TestFeeder.Views.SpotLoadView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestFeeder"
+      xmlns:vm="clr-namespace:TestFeeder.ViewModels"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CreateSpotLoad" WindowStartupLocation="CenterScreen">
+
+
+    <Window.DataContext>
+        <vm:SpotLoadViewModel>
+            
+        </vm:SpotLoadViewModel>
+    </Window.DataContext>
+
+    <Grid>
+
+
+
+        
+        <DockPanel LastChildFill="False">
+
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" HorizontalAlignment="Center" Margin="10">
+                <TextBlock Name="node_id" Text="{Binding  Node_id,Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" />
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Label   Content="Load Model:" />
+                <ComboBox  x:Name="loadModelEnum"></ComboBox>
+            </StackPanel>
+
+
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Label Content="Ph_1 (kW)" />
+                <TextBox Text="{Binding  Ph1,Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"  Width="100" Name="ph1"  PreviewTextInput="bandwidthTextBox_PreviewTextInput"/>
+
+                <Label Content="Ph_1 (kVAr)" />
+                <TextBox  Text="{Binding  Ph1_1,Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" Width="100" Name="ph1_1"  PreviewTextInput="bandwidthTextBox_PreviewTextInput"/>
+
+                <Label Content="Ph_2 (kW)" />
+                <TextBox Text="{Binding  Ph2,Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"  Width="100" Name="ph2"  PreviewTextInput="bandwidthTextBox_PreviewTextInput"/>
+
+                <Label Content="Ph_2 (kVAr)" />
+                <TextBox Text="{Binding  Ph2_1,Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"  Width="100" Name="ph2_1"  PreviewTextInput="bandwidthTextBox_PreviewTextInput"/>
+
+                <Label Content="Ph_3 (kW)" />
+                <TextBox Text="{Binding  Ph3,Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"  Width="100" Name="ph3"  PreviewTextInput="bandwidthTextBox_PreviewTextInput"/>
+
+                <Label Content="Ph_3 (kVAr)" />
+                <TextBox Text="{Binding  Ph3_1,Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}"  Width="100" Name="ph3_1"  PreviewTextInput="bandwidthTextBox_PreviewTextInput"/>
+                
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" DockPanel.Dock="Top"  HorizontalAlignment="Center" Margin="10">
+
+                <Button Name ="dynamicButton" Background="Green" Width ="200" Content="Save" Click="dynamicButton_Click">
+
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </Button.Resources>
+
+                </Button>
+
+            </StackPanel>
+
+
+        </DockPanel>
+            
+    </Grid>
+</Window>

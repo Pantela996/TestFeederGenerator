@@ -1,0 +1,269 @@
+<ListOfGraphSerializationData xmlns:yaxlib="http://www.sinairv.com/yaxlib/">
+  <GraphSerializationData>
+    <Data yaxlib:realtype="TestFeeder.Models.SpotLoad">
+      <Name />
+      <Node />
+      <LoadModel>D_PQ</LoadModel>
+      <Ph_1>0</Ph_1>
+      <Ph_1_2>0</Ph_1_2>
+      <Ph_2>0</Ph_2>
+      <Ph_2_2>0</Ph_2_2>
+      <Ph_3>0</Ph_3>
+      <Ph_3_2>0</Ph_3_2>
+      <Element_id>1</Element_id>
+      <Text>Spot load: 1</Text>
+      <typeOfVertex>SPOT_LOAD_VERTEX</typeOfVertex>
+      <Angle>0</Angle>
+      <GroupId>0</GroupId>
+      <SkipProcessing>Default</SkipProcessing>
+      <ID>1</ID>
+    </Data>
+    <Position>
+      <X>340</X>
+      <Y>503</Y>
+    </Position>
+    <IsVisible>True</IsVisible>
+    <HasLabel>True</HasLabel>
+  </GraphSerializationData>
+  <GraphSerializationData>
+    <Data yaxlib:realtype="TestFeeder.Models.DataVertexRegulator">
+      <RegulatorID>22</RegulatorID>
+      <Line_Segment_From>2</Line_Segment_From>
+      <Line_Segment_To>22</Line_Segment_To>
+      <Location>Synchronous machine first ending: 2</Location>
+      <Phases>ABC</Phases>
+      <Connection>ABCB</Connection>
+      <MonitoringPhase>ABCB</MonitoringPhase>
+      <Bandwidth>2</Bandwidth>
+      <Ratio>2</Ratio>
+      <PrimaryCTRating>2</PrimaryCTRating>
+      <CompensatorSettingsA>PhAB</CompensatorSettingsA>
+      <CompensatorSettingsB>PhAB</CompensatorSettingsB>
+      <R_SettingA>2</R_SettingA>
+      <R_SettingB>2</R_SettingB>
+      <X_SettingA>2</X_SettingA>
+      <X_SettingB>2</X_SettingB>
+      <VoltageLevelA>2</VoltageLevelA>
+      <VoltageLevelB>2</VoltageLevelB>
+      <Element_id>2</Element_id>
+      <Text>Synchronous machine first ending: 2</Text>
+      <typeOfVertex>REGULATOR_VERTEX</typeOfVertex>
+      <Angle>0</Angle>
+      <GroupId>0</GroupId>
+      <SkipProcessing>Default</SkipProcessing>
+      <ID>-1</ID>
+    </Data>
+    <Position>
+      <X>891</X>
+      <Y>73</Y>
+    </Position>
+    <IsVisible>True</IsVisible>
+    <HasLabel>True</HasLabel>
+  </GraphSerializationData>
+  <GraphSerializationData>
+    <Data yaxlib:realtype="TestFeeder.Models.DataVertexTransformer">
+      <NameA>3</NameA>
+      <NameB>3</NameB>
+      <_kVA_A>3</_kVA_A>
+      <_kVA_B>3</_kVA_B>
+      <_kV_HighA>3</_kV_HighA>
+      <_kV_HighB>3</_kV_HighB>
+      <_kV_LowA>3</_kV_LowA>
+      <_kV_LowB>3</_kV_LowB>
+      <RPercentageA>3</RPercentageA>
+      <RPercentageB>3</RPercentageB>
+      <XPercentageA>33</XPercentageA>
+      <XPercentageB>3</XPercentageB>
+      <Line_from>3</Line_from>
+      <Line_to>33</Line_to>
+      <Element_id>3</Element_id>
+      <Text>First transfromer ending: 3</Text>
+      <typeOfVertex>TRANSFORMER_VERTEX</typeOfVertex>
+      <Angle>0</Angle>
+      <GroupId>0</GroupId>
+      <SkipProcessing>Default</SkipProcessing>
+      <ID>-1</ID>
+    </Data>
+    <Position>
+      <X>360</X>
+      <Y>395</Y>
+    </Position>
+    <IsVisible>True</IsVisible>
+    <HasLabel>True</HasLabel>
+  </GraphSerializationData>
+  <GraphSerializationData>
+    <Data yaxlib:realtype="TestFeeder.Models.SpotLoad">
+      <Name />
+      <Node />
+      <LoadModel>D_PQ</LoadModel>
+      <Ph_1>0</Ph_1>
+      <Ph_1_2>0</Ph_1_2>
+      <Ph_2>0</Ph_2>
+      <Ph_2_2>0</Ph_2_2>
+      <Ph_3>0</Ph_3>
+      <Ph_3_2>0</Ph_3_2>
+      <Element_id>4</Element_id>
+      <Text>Spot load: 4</Text>
+      <typeOfVertex>SPOT_LOAD_VERTEX</typeOfVertex>
+      <Angle>0</Angle>
+      <GroupId>0</GroupId>
+      <SkipProcessing>Default</SkipProcessing>
+      <ID>4</ID>
+    </Data>
+    <Position>
+      <X>90</X>
+      <Y>90</Y>
+    </Position>
+    <IsVisible>True</IsVisible>
+    <HasLabel>True</HasLabel>
+  </GraphSerializationData>
+  <GraphSerializationData>
+    <Data yaxlib:realtype="TestFeeder.Models.SpotLoad">
+      <Name />
+      <Node />
+      <LoadModel>D_PQ</LoadModel>
+      <Ph_1>0</Ph_1>
+      <Ph_1_2>0</Ph_1_2>
+      <Ph_2>0</Ph_2>
+      <Ph_2_2>0</Ph_2_2>
+      <Ph_3>0</Ph_3>
+      <Ph_3_2>0</Ph_3_2>
+      <Element_id>5</Element_id>
+      <Text>Spot load: 5</Text>
+      <typeOfVertex>SPOT_LOAD_VERTEX</typeOfVertex>
+      <Angle>0</Angle>
+      <GroupId>0</GroupId>
+      <SkipProcessing>Default</SkipProcessing>
+      <ID>5</ID>
+    </Data>
+    <Position>
+      <X>543</X>
+      <Y>59</Y>
+    </Position>
+    <IsVisible>True</IsVisible>
+    <HasLabel>True</HasLabel>
+  </GraphSerializationData>
+  <GraphSerializationData>
+    <Data yaxlib:realtype="TestFeeder.Models.SpotLoad">
+      <Name />
+      <Node />
+      <LoadModel>D_PQ</LoadModel>
+      <Ph_1>0</Ph_1>
+      <Ph_1_2>0</Ph_1_2>
+      <Ph_2>0</Ph_2>
+      <Ph_2_2>0</Ph_2_2>
+      <Ph_3>0</Ph_3>
+      <Ph_3_2>0</Ph_3_2>
+      <Element_id>6</Element_id>
+      <Text>Spot load: 6</Text>
+      <typeOfVertex>SPOT_LOAD_VERTEX</typeOfVertex>
+      <Angle>0</Angle>
+      <GroupId>0</GroupId>
+      <SkipProcessing>Default</SkipProcessing>
+      <ID>6</ID>
+    </Data>
+    <Position>
+      <X>121</X>
+      <Y>362</Y>
+    </Position>
+    <IsVisible>True</IsVisible>
+    <HasLabel>True</HasLabel>
+  </GraphSerializationData>
+  <GraphSerializationData>
+    <Data yaxlib:realtype="TestFeeder.Models.SpotLoad">
+      <Name />
+      <Node />
+      <LoadModel>D_PQ</LoadModel>
+      <Ph_1>0</Ph_1>
+      <Ph_1_2>0</Ph_1_2>
+      <Ph_2>0</Ph_2>
+      <Ph_2_2>0</Ph_2_2>
+      <Ph_3>0</Ph_3>
+      <Ph_3_2>0</Ph_3_2>
+      <Element_id>7</Element_id>
+      <Text>Spot load: 7</Text>
+      <typeOfVertex>SPOT_LOAD_VERTEX</typeOfVertex>
+      <Angle>0</Angle>
+      <GroupId>0</GroupId>
+      <SkipProcessing>Default</SkipProcessing>
+      <ID>7</ID>
+    </Data>
+    <Position>
+      <X>311</X>
+      <Y>57</Y>
+    </Position>
+    <IsVisible>True</IsVisible>
+    <HasLabel>True</HasLabel>
+  </GraphSerializationData>
+  <GraphSerializationData>
+    <Data yaxlib:realtype="TestFeeder.Models.SpotLoad">
+      <Name />
+      <Node />
+      <LoadModel>D_PQ</LoadModel>
+      <Ph_1>0</Ph_1>
+      <Ph_1_2>0</Ph_1_2>
+      <Ph_2>0</Ph_2>
+      <Ph_2_2>0</Ph_2_2>
+      <Ph_3>0</Ph_3>
+      <Ph_3_2>0</Ph_3_2>
+      <Element_id>8</Element_id>
+      <Text>Spot load: 8</Text>
+      <typeOfVertex>SPOT_LOAD_VERTEX</typeOfVertex>
+      <Angle>0</Angle>
+      <GroupId>0</GroupId>
+      <SkipProcessing>Default</SkipProcessing>
+      <ID>8</ID>
+    </Data>
+    <Position>
+      <X>725</X>
+      <Y>508</Y>
+    </Position>
+    <IsVisible>True</IsVisible>
+    <HasLabel>True</HasLabel>
+  </GraphSerializationData>
+  <GraphSerializationData>
+    <Data yaxlib:realtype="TestFeeder.Models.DataVertexRegulatorPartial">
+      <RegulatorID />
+      <CompensatorSettingsB>PhAB</CompensatorSettingsB>
+      <R_SettingB>0</R_SettingB>
+      <X_SettingB>0</X_SettingB>
+      <VoltageLevelB>0</VoltageLevelB>
+      <Element_id>22</Element_id>
+      <Text>Synchronous machine second ending: 22</Text>
+      <typeOfVertex>REGULATOR_PARTIAL_VERTEX</typeOfVertex>
+      <Angle>0</Angle>
+      <GroupId>0</GroupId>
+      <SkipProcessing>Default</SkipProcessing>
+      <ID>9</ID>
+    </Data>
+    <Position>
+      <X>795</X>
+      <Y>327</Y>
+    </Position>
+    <IsVisible>True</IsVisible>
+    <HasLabel>True</HasLabel>
+  </GraphSerializationData>
+  <GraphSerializationData>
+    <Data yaxlib:realtype="TestFeeder.Models.DataVertexTransformerPartial">
+      <Name />
+      <_kVA>0</_kVA>
+      <_kV_High>0</_kV_High>
+      <_kV_Low>0</_kV_Low>
+      <RPercentage>0</RPercentage>
+      <XPercentage>0</XPercentage>
+      <Element_id>33</Element_id>
+      <Text>Second transfromer ending: 33</Text>
+      <typeOfVertex>TRANSFORMER_PARTIAL_VERTEX</typeOfVertex>
+      <Angle>0</Angle>
+      <GroupId>0</GroupId>
+      <SkipProcessing>Default</SkipProcessing>
+      <ID>10</ID>
+    </Data>
+    <Position>
+      <X>270</X>
+      <Y>270</Y>
+    </Position>
+    <IsVisible>True</IsVisible>
+    <HasLabel>True</HasLabel>
+  </GraphSerializationData>
+</ListOfGraphSerializationData>

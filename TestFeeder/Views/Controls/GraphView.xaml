@@ -1,0 +1,73 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TestFeeder.Views.Controls" 
+             xmlns:controls="http://schemas.panthernet.ru/graphx/"
+             xmlns:models="clr-namespace:TestFeederGenerator.Models"
+             xmlns:dxb="http://schemas.devexpress.com/winfx/2008/xaml/bars"
+             xmlns:dxwui="http://schemas.devexpress.com/winfx/2008/xaml/windowsui"
+             xmlns:ViewModels="clr-namespace:TestFeeder.ViewModels"
+            x:Class="TestFeeder.Views.Controls.GraphView"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="800">
+    
+    
+    <UserControl.DataContext>
+        <ViewModels:GraphViewModel/>
+    </UserControl.DataContext>
+    <Grid>
+        
+        <controls:ZoomControl Name="zoomctrl" Grid.Row="0"  Click="zoomctrl_Click">
+            <models:GraphArea x:Name="Area" EdgeClicked="Area_EdgeClicked" VertexSelected="Area_VertexSelected" VertexDoubleClick="Area_VertexDoubleClick" />
+        </controls:ZoomControl>
+
+        <DockPanel LastChildFill="False">
+            <StackPanel Orientation="Vertical">
+                <ToolBarTray  x:Name="toolbar"  DockPanel.Dock="Top" Orientation="Vertical" Margin="0,20,0,0" HorizontalAlignment="Left" IsLocked="True" Width="70" VerticalAlignment="Stretch">
+                    <ToolBar MouseDoubleClick="HideShowToolbar">
+                        <Separator/>
+                        <Button DataContext="T" Click="AddElement" Background="GreenYellow" HorizontalAlignment="Left" ToolTip="Create new Transformer">
+                            <Image Source="/Resources/Images/trans.png" Width="30" Height="30"/>
+                        </Button>
+                        <Separator/>
+                        <Button DataContext="R" Click="AddElement" Background="Red" HorizontalAlignment="Left"  ToolTip="Create new Regulator">
+                            <Image Source="/Resources/Images/regulator.png"  Width="30" Height="30"/>
+                        </Button>
+                        <Separator/>
+                        <Button DataContext="SL" Click="AddElement" Background="DarkBlue" HorizontalAlignment="Left" ToolTip="Create new Spot Load">
+                            <Image Source="/Resources/Images/spotload.jpg"  Width="30" Height="30"/>
+                        </Button>
+                        <Separator/>
+                        <ToggleButton  DataContext="AC" Click="EnableACLine" x:Name="ACLine" HorizontalAlignment="Left" Background="Chocolate" ToolTip="Setup Ac Line Segment">
+                            <Image Source="/Resources/Images/line_segment.png"  Width="30" Height="30"/>
+                        </ToggleButton>
+                        <Separator/>
+                        <ToggleButton  DataContext="X" Click="XClick" x:Name="xbutton" HorizontalAlignment="Left" ToolTip="Delete Connection">
+                            <Image Source="/Resources/Images/x.png"  Width="30" Height="30"/>
+                        </ToggleButton>
+                        <!--<ToggleButton  DataContext="XVertex" Click="XVertexClick" x:Name="xvertex" HorizontalAlignment="Left" ToolTip="Delete Vertex">
+                            <Image Source="/Images/deletevertex.png"  Width="30" Height="30"/>
+                        </ToggleButton>-->
+                        <Separator/>
+                        <Button Command="{Binding MyButtonClickCommand}" Click="undo_Click" x:Name="undo" HorizontalAlignment="Left" ToolTip="Undo action">
+                            <Image Source="/Resources/Images/undo.png"  Width="30" Height="30"/>
+                        </Button>
+                        <Separator/>
+                        <Button DataContext="REDO" Click="redo_Click" x:Name="redo" HorizontalAlignment="Left"  ToolTip="Redo action">
+                            <Image Source="/Resources/Images/redo.png"  Width="30" Height="30"/>
+                        </Button>
+
+                        <StackPanel>
+                            <CheckBox Background="RoyalBlue" x:Name="auto_generate_id" Content="ID&#xA;Auto&#xA;generate"/>
+                        </StackPanel>
+                    </ToolBar>
+
+                </ToolBarTray>
+
+            </StackPanel>
+
+        </DockPanel>
+    </Grid>
+</UserControl>
